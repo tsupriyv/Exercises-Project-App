@@ -1,46 +1,4 @@
-Introduction
-In this assignment, you will use the MERN stack to write a Single Page Application (SPA) that tracks exercises completed by the user. The front-end of the app will use Node and React as well as global design features. The backend will use MongoDB persistance, Mongoose, Express, REST, and Node.
-
-This is the "Portfolio Assignment" for the course. This means that you are allowed to post the entirety of the assignment publicly (e.g., Github, personal website, etc.) after the term ends. You can use this as an opportunity to showcase your work to potential employers.
-
-Note: The material you need to know to complete this assignment is covered in these Explorations:
-
-Module 4 (CSS and global design features)
-Module 5 (React)
-Module 7, 8, 9 (MongoDB, Mongoose, Rest)
-Use Movies app starter code from Modules 8 ---> and 9.
-Be sure to periodically review Assignment 7 Tips Links to an external site.thread in the Ed discussion board (pinned at the top)
-
-Learning Outcomes
-What is the typical use of some frequently used HTTP methods? (Module 8 MLO 1)
-What are HTTP headers and what is their use? (Module 8 MLO 2)
-What is the use of HTTP response status codes? (Module 8 MLO 3)
-What is the Express API for HTTP requests and responses? (Module 8 MLO 4)
-What are REST APIs and how can we implement them using Express? (Module 8 MLO 6)
-What is the lifecycle of a React component? (Module 9 MLO 1)
-What are the useEffect and useHistory React hooks? (Module 9 MLO 2)
-How can we deploy a React app created using create-react-app (CRA) (Module 9 MLO 3)?
-What is the Fetch API? (Module 9 MLO 4)
-Why do we need to lift up state in some apps? (Module 9 MLO 5)?
-Basic Instructions
-Develop a web app as a Single Page Application (SPA) using React, React Router, Express, MongoDB, Mongoose, REST, HTML, and CSS. The website will include the following pages, incorporate component files, use React Router, Link, State, useHistory, and useEffect.
-
-Home page
-Edit page
-Create page
-Understand the file structure
-Frontend and Backend file structure and relationships between the two.
-Data for the App
-You will store the data in MongoDB in a collection named exercises. Each document in the collection must have the following properties (i.e., all properties are required):
-
-Property	Data Type	Comments
-name	String	The name of the exercise.
-reps	Number	The number of times the exercise was performed.
-weight	Number	The weight of the weights used for the exercise.
-unit	String	The unit of measurement with values like: kgs, lbs, miles, etc.
-date	Date	The date the exercise was performed.
 REST API Web Service
-The REST API for this assignment is very similar to the REST API for movies implemented in Module 8. Implementing that REST API will help you implement the REST API for this assignment. It must have its own directory (separate from the frontend/UI), its own package.json file, and its own node_modules folder. You must implement a REST API that supports CRUD operations by implementing the following 4 endpoints:
 
 1. Create using POST /exercises
 Request
@@ -202,19 +160,15 @@ Update and add rules to the existing App.css file that resides in the /src folde
 
 Login to Replit to copy the Global Stylesheet Links to an external site.(from Exploration — Introduction to CSS and Frontend Design).
 Paste the Global Stylesheet comment/prompts into your App.css< file to use as a guide.
-(Optional) Import a Google font.
-(Optional) Define color variables to use in the following rules.
-(Optional) You may delete any selectors you end up not using. Do this step after you finish the design work.
 Don't define classes you don't need; it is preferable to add property:value rules to existing selectors.
 Do not use white, black, auto, or Times New Roman font in any selectors. They are defaults and should be redefined.
 Define the body {} rule's values for text color, background color, font-family, font-size, margin, and padding properties.
 Define the nav, nav a, and nav a:hover rules' values for background-color, color, border, font-size, font-weight, margin, padding, text-decoration, and vertical alignment properties. The goal is to design anchors that are fat enough for a finger to touch and to differentiate them from regular text anchors.
 Define the header and footer rules' values for background-color, color, border, font-size, font-weight, margin, and padding properties.
 Define the main rule's values for background-color, color, border, and padding to differentiate it from the header and footer.
-(Optional) Add h1 and h2 rules to update the font-family, colors, and sizes.
+
 Define the table rule to collapse the borders.
 Define the tr, th, and td rules' values for border and padding properties.
 (Optional) Define a subtle row color changes using :nth-child(even).
 Define the form, input, select,, and button rules' values for padding and font properties. The font should match the body font rule. These form controls should be easier to type in due to an increase in padding and font-size.
 (RECOMMENDED) Define label rules to improve usability, such as label {display:block;}
-(Optional) Define the :focus, :valid, :invalid, and ::placeholder rules for input and button.
